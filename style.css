@@ -1,10 +1,7 @@
-*{
+ body{
+    margin: 100px 75px 0 75px;
     font-size: 15px;
     font-family: 'Spartan', sans-serif;
-}
-
-body{
-    margin: 100px 75px 0 75px;
 }
 
 .wrapper{
@@ -72,23 +69,30 @@ body{
 
 #bottom{
     display: flex;
-    margin-top: 50px;
-   
+    margin-top: 50px; 
     margin-bottom: 35px;
+    justify-content: start;
 }
 
 .review{
     background-color: hsl(300, 43%, 22%);
-    color: white;
+    color:hsl(0, 0%, 100%);
+    font-size: 0.85rem;
     border-radius: 5px;
-    margin: 0 13px;
-    padding: 25px;
+    margin-right: 50px;
+    padding: 40px;
     width: 270px;
+    display: flex;
+    flex-direction: column;
 }
 
 .review img{
     border-radius: 50%;
-    width: 40px;
+    width: 35px;
+}
+
+.about{
+    display: flex;
 }
 
 #bottom .rev2{
@@ -99,6 +103,60 @@ body{
 #bottom .rev3{
     position: relative;
     top: 30px;
+}
+
+.review .name{
+    margin-left: 20px;
+}
+
+.review .name span{
+    color: hsl(333, 80%, 67%);
+}
+
+.review .quotes{
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1005px){
+    body{
+        margin: 50px;
+    }
+
+    #top, #bottom{
+        flex-direction: column;
+    }
+
+    #top .header{
+        text-align: center;
+    }
+
+    #top .header .heading{
+        margin: 0;
+        width: 75%;
+    }
+
+    #top .header .text{
+        margin: 20px 0;
+    }
+
+    #top .rating{
+        justify-content: start;
+        margin: 10px 0;
+    }
+
+    #top .rating .ratingBox{
+        margin-left: 0;
+        flex-direction: column;  
+    }
+
+    #top .rating .ratingBox .rated, #top .rating .ratingBox .stars{
+        margin: 2px 0;
+    }
+
+    #bottom .review{
+        justify-content: center;
+        width: 85%
+    }
 }
 
 .attribution {
