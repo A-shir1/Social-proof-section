@@ -4,7 +4,12 @@
 }
 
 body{
-    margin: 125px;
+    margin: 100px 75px 0 75px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
 }
 
 #top{
@@ -30,6 +35,7 @@ body{
 
 #top .rating{
     margin-left: 75px;
+    color: hsl(300, 43%, 22%);
 } 
 
 #top .rating .ratingBox{
@@ -37,8 +43,9 @@ body{
     align-items: center;
     background-color: hsl(300, 24%, 96%);
     width: 450px;
-    height: 30px;
+    height: 45px;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .ratingBox .rated{
@@ -53,9 +60,51 @@ body{
     margin: 0 1px;
 }
 
+.rating .box2{
+    margin-left: 8%;
+}
+
+.rating .box3{
+    margin-left: 16%;
+}
+
+/* BOTTOM */
+
+#bottom{
+    display: flex;
+    margin-top: 50px;
+   
+    margin-bottom: 35px;
+}
+
+.review{
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    border-radius: 5px;
+    margin: 0 13px;
+    padding: 25px;
+    width: 270px;
+}
+
+.review img{
+    border-radius: 50%;
+    width: 40px;
+}
+
+#bottom .rev2{
+    position: relative;
+    top: 15px;
+}
+
+#bottom .rev3{
+    position: relative;
+    top: 30px;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
